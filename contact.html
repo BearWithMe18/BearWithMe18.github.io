@@ -13,22 +13,25 @@
 <body>
     <div id="header"></div>
     <div class="px-4 py-5 my-5 text-center">
-        <form>
-            <div class="mb-3">
-                <label for="contactName" class="form-label">Name</label>
-                <input type="text" required class="form-control" id="contactEmail" aria-describedby="emailHelp">
+        <form class="row g-3 needs-validation">
+            <div class="col-mb-3">
+                <label for="contactName" class="form-label">Name*</label>
+                <input type="text" required class="form-control" id="contactEmail">
+                <div class="invalid-feedback">
+                    Please enter a name.
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="contactEmail" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="contactEmail" aria-describedby="emailHelp">
+            <div class="col-md-6">
+                <label for="contactEmail" class="form-label">Email address*</label>
+                <input type="email" class="form-control" id="contactEmail" required>
             </div>
-            <div class="mb-3">
-                <label for="contactPhone" class="form-label">Phone Number</label>
-                <input type="tel" class="form-control" id="contactPhone">
+            <div class="col-md-6">
+                <label for="contactPhone" class="form-label">Phone Number*</label>
+                <input type="tel" class="form-control" id="contactPhone" minlength="10" maxlength="15" required>
             </div>
             <div class="mb-3">
                 <label for="contactMessage" class="form-label">Message</label>
-                <textarea rows=4 class="form-control" id="contactMessage"></textarea>
+                <textarea rows=4 class="form-control" id="contactMessage" maxlength="1000"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
