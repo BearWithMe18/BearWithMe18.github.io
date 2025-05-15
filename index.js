@@ -5,3 +5,5 @@ const header = document.getElementById('header'); header.innerHTML = `<nav class
         <a class="nav-link" href="https://github.com/BearWithMe18">Github</a>
         <a class="nav-link" href="https://www.linkedin.com/in/noah-leach-79650116b">LinkedIn</a>
     </nav>`
+
+document.getElementById("header").insertAdjacentHTML('afterbegin', header);
