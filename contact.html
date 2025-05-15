@@ -13,25 +13,27 @@
 <body>
     <div id="header"></div>
     <div class="px-4 py-5 my-5 text-center">
-        <form class="row g-3 needs-validation">
+        <form class="row g-3 needs-validation" method="post"
+            action="https://script.google.com/macros/s/AKfycbxfqZwKL_AoRoJI08aMo3aa6hlGIYz4ZCy_xQxFd-nBKz8b-9PMLkqcvwptZE_8jG5T/exec">
             <div class="col-mb-3">
                 <label for="contactName" class="form-label">Name*</label>
-                <input type="text" required class="form-control" id="contactEmail">
+                <input name="Name" type="text" required class="form-control" id="contactEmail">
                 <div class="invalid-feedback">
                     Please enter a name.
                 </div>
             </div>
             <div class="col-md-6">
                 <label for="contactEmail" class="form-label">Email address*</label>
-                <input type="email" class="form-control" id="contactEmail" required>
+                <input name="Email" type="email" class="form-control" id="contactEmail" required>
             </div>
             <div class="col-md-6">
                 <label for="contactPhone" class="form-label">Phone Number*</label>
-                <input type="tel" class="form-control" id="contactPhone" minlength="10" maxlength="15" required>
+                <input name="Phone" type="tel" class="form-control" id="contactPhone" minlength="10" maxlength="15"
+                    required>
             </div>
             <div class="mb-3">
                 <label for="contactMessage" class="form-label">Message</label>
-                <textarea rows=4 class="form-control" id="contactMessage" maxlength="1000"></textarea>
+                <textarea name="Message" rows=4 class="form-control" id="contactMessage" maxlength="1000"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
